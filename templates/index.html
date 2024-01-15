@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Name</title>
+    <!-- Link Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        a {
+            text: left;
+            text-decoration: none;
+            padding: 10px;
+
+
+        }
+
+        nav {
+            background-color: #007bff;
+        }
+
+        nav a {
+            color: #070707;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-sizes: 5rem;
+            text: right;
+            }
+
+        .ml-auto {
+            margin-left: auto !important;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .blog-post {
+            margin-bottom: 40px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 0px;
+            text-align: center;
+            text-justify: auto;
+            position: fixed;
+            bottom: 0;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <a class="navbar-brand text-size" href="#">PK@Kushwaha</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Student</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <button type="button" name="login" class="btn btn-warning"
+                        style="margin-right: 10px; padding: 5px;">
+                        <a href="{% url 'login' %}" style="text-decoration: none; color: inherit;">Logout</a>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <!-- Blog Section -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8">
+
+                    <!-- Blog Post 1 -->
+                    <div class="blog-post">
+                        <h2 class="blog-post-title">Do Somthing</h2>
+                        <p class="blog-post-meta">January 1, 2023 by <a href="#">Pawan Juliet</a></p>
+                        <p>Creating something great with HTML and CSS allows you to craft visually stunning and highly functional web content. <br> HTML forms the structural backbone, defining the content hierarchy, while CSS brings your design vision to life. Leveraging CSS, you can customize layouts, fonts, colors, and animations, ensuring a seamless and aesthetically pleasing user experience. Whether designing responsive layouts for various devices or implementing interactive features, <br> the combination of HTML and CSS empowers you to build engaging and accessible websites. <br> The flexibility of these technologies enables you to showcase creativity, delivering not just a website but a digital experience that captivates and serves your audience effectively. <br> Dive into the endless possibilities, turning code into a canvas for your digital masterpiece.</p>
+                        <!-- Add your content here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
